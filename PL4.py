@@ -4,7 +4,7 @@ from ecdsa import SigningKey, VerifyingKey, SECP256k1
 def sha256_hash (data: str) -> str:
     return hashlib.sha256(data.encode()).hexdigest()
 
-# Generate ECDSA keys
+# Generate ECDSA keys #
 private_key = SigningKey.generate(curve=SECP256k1)
 public_key = private_key.get_verifying_key()
 

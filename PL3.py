@@ -13,7 +13,7 @@ class Block:
         self.hash = self.mine_block()
 
     def mine_block(self):
-        # Find a hash that satisfy the difficult condition of (pow Algorithm)
+        # Find a hash that satisfy the difficult condition of (pow Algorithm)#
         while True:
             hash_value = self.compute_hash()
             if hash_value[:self.difficulty] == '0'*self.difficulty:
